@@ -8,7 +8,7 @@
   <a href="#memo-license">License</a>
 </p>
 
-## :🤖: Technologies
+## 🤖 Technologies
 
 This project was made using the following tech:
 
