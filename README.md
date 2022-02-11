@@ -16,6 +16,8 @@ This project was made using the following tech:
 -   [Docker](https://www.docker.com/)
 -   [Swagger](https://swagger.io/)
 -   [PostgreSQL](https://www.postgresql.org/)
+-   [Jest](https://jestjs.io/)
+
 
 ## 💻 Project
 
