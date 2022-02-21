@@ -1,3 +1,4 @@
+import { AppError } from "../../../../shared/errors/AppError";
 import { ICreateUserDTO } from "../../dtos/ICreateUserDTO";
 import { UsersRepositoryInMemory } from "../../repositories/in-memory/UsersRepositoryInMemory";
 import { CreateUserUseCase } from "../createUser/CreateUserUseCase";
@@ -38,10 +39,10 @@ describe("Authenticate User", () => {
   it("it shouldn't be able to authenticate non-existent user", () => {
     expect(async () => {
       await authenticateUserUseCase.execute({
-        email: "error@notgoing.com",
+        email: "AppError@notgoing.com",
         password: "password",
       });
-    }).rejects.toBeInstanceOf(Error);
+    }).rejects.toBeInstanceOf(AppError);
   });
 
   it("it shouldn't be able to authenticate users with an incorrect password", () => {
@@ -59,6 +60,6 @@ describe("Authenticate User", () => {
         email: user.email,
         password: "password",
       });
-    }).rejects.toBeInstanceOf(Error);
+    }).rejects.toBeInstanceOf(AppError);
   });
 });
