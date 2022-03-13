@@ -20,7 +20,7 @@ This project was made using the following tech:
 
 
 ## 💻 Project
-
+The idea behind this project was to create a backend API for an Rental Car Application. It covers the entire business rules of creating cars and users with proper authentication for accessing each endpoint. The project follows S.O.L.I.D principles at its best and comprehends a great deal of Clean Code concepts. It is a REST API ready to serve any Front-End that follows the Swagger Documentation. I may say personally that I learned a substantial amount of architectural design concepts which I'm (and will be) using and every project that those standards fit.
 
 
 ## :memo: License
